@@ -312,7 +312,7 @@ fn _wsclient_kick(_user_id: usize) {
 }
 
 // example processevent
-fn _wsclient_processevent(event: String) {
+fn _wsclient_processevent(_event: String) {
     
     // we need to process this received event from the ws API
 
