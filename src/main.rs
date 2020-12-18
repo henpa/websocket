@@ -18,6 +18,13 @@ I need to process other random messages received from the ws API
 I can handle the processing of JSON messages and etc, what I cannot do is the websocket client thing and the engine to send/receive messages to it
 from the rest of the program.
 
+The websocket can be simulated using https://github.com/vi/websocat (there're instructions for compiling on Rust), ex:
+
+$ websocat -H='Sec-WebSocket-Protocol: janus-protocol' ws://167.99.189.30:8188/janus
+sent: {"janus":"create", "apisecret":"api_secret4321", "transaction":"Qs6uJ7jODoJR"}
+received: {    "janus": "success",    "transaction": "Qs6uJ7jODoJR",    "data": {       "id": 2311473582179730    } }
+
+
   ** please search for "HELP 1" and "HELP 2" for further details **
 
 */
